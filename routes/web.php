@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get("/",["as"=>"index", "uses"=>"HomeCTRL@index"]);
+Route::get("/hakkimizda",["as"=>"abouts", "uses"=>"HomeCTRL@abouts"]);
+
